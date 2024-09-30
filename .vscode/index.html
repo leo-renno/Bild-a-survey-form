@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1 id="title">Cabin in the Woods Survey Form</h1>
+      <p id="description">We are glad with your stay. Now help us to improve your next one!</p>
+      <form id="survey-form">
+        <fieldset>
+          <label id="name-label">Name</label>
+            <input id="name" name="name" type="text" placeholder="Enter your name here" required>
+          <label id="email-label">Email</label>
+            <input id="email" name="email" type="email" placeholder="Enter your email here" required>
+          <label id="number-label">Age</label>
+            <input id="number" name="number" type="number" min="18" max="120" required placeholder="Age">
+        </fieldset>
+        <fieldset>
+          <label>What brought you to the cabin?
+            <select id="dropdown">
+              <option value="">(select one)</option>
+              <option value="1">Visiting the area</option>
+              <option value="2">Vacation</option>
+              <option value="3">Business</option>
+              <option value="4">Chill place for remote work</option>
+              <option value="5">Other</option>
+            </select>
+          </label>
+        </fieldset>
+        <fieldset>
+          <legend>Where did you hear about us?</legend>
+          <label><input id="internet" type="radio" name="media" value="internet" checked> Internet</label>
+          <label><input id="acquaintance" type="radio" name="media" value="acquaintance">Acquaintance</label>
+          <label><input id="newspaperMagazines" type="radio" name="media" value="newspaperMagazines">Newspaper, magazines</label>
+          <label><input id="other" type="radio" name="media" value="other">Other</label>
+        </fieldset>
+        <fieldset>
+          <label>What did you enjoy the most?
+            <select>
+              <option value="">(select one)</option>
+              <option value="1">Landscapes</option>
+              <option value="2">Trails</option>
+              <option value="3">Bed</option>
+              <option value="4">The hammock on the balcony</option>
+              <option value="5">Wood oven</option>
+              <option value="6">Silence</option>
+            </select>
+          </label>
+        </fieldset>
+        <fieldset>
+          <legend>What could we do better?</legend>
+            <label><input type="checkbox" name="improvement" value="waterHit"> Water hit</label>
+            <label><input type="checkbox" name="improvement" value="KitchenOutils"> Kitchen outils</label>  
+            <label><input type="checkbox" name="improvement" value="InternetSpeed"> Internet speed</label> 
+            <label><input type="checkbox" name="improvement" value="mattress"> Mattress</label>
+            <label><input type="checkbox" name="improvement" value="couch"> Couch</label>
+            <label><input type="checkbox" name="improvement" value="CheckInOut">Check in (out)</label>
+        </fieldset>
+        <fieldset>
+          <label>We would love to learn more about your stay!
+            <textarea name="comments" rows="4" cols="20">Enter your comments and suggestions</textarea>       
+        </fieldset>
+        <input id="submit" type="submit" value="Submit" >
+      </form>
+    <footer>
+      <p>1st Certification Project (Responsive Web Design) </p>
+      <p>Free Code Camp</p>
+    </footer>
+  </body>
+</html>
